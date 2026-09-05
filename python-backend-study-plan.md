@@ -250,9 +250,15 @@ Python + FastAPI + SQLAlchemy + SQLite(→PostgreSQL) + pytest + Docker
 - **실습 1 (파일로 카운터 유지) 완주.** try/except, with, 파일 읽고 쓰기, `write()`가 글자 수를 반환한다는 것까지 확인
 - **실습 2 (가상환경) 완주.** PATH가 뭔지, 활성화가 PATH 맨 앞에 `.venv\Scripts`를 끼워 넣는 것이라는 것까지
 
-### 다음: Phase 1 — 프레임워크 없이 표준 라이브러리로 서버 띄우기
-- **직접 확인할 것:** 서버를 끄면? 다른 포트로 접속하면? 같은 포트에 서버 두 개를 띄우면?
-- **블로그 첫 글감:** 위 실습에서 예상과 달랐던 것 하나
+### Phase 1 완료 (2026-09-02)
+- 프레임워크 없이 표준 라이브러리로 서버 띄우기 실습 완주
+- 클라이언트-서버, 요청-응답, 포트 개념 확인
+
+### 다음: Phase 2 — HTTP와 API
+- HTTP 메서드 (GET/POST/PUT/PATCH/DELETE), 상태 코드
+- 요청 본문 / 응답 본문, JSON
+- REST의 개념, "API가 뭐냐"에 대한 답
+- 쿠키, 세션, JWT
 
 ### Git
 - 저장소: https://github.com/suncoolgm-collab/End2end
