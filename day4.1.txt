@@ -1,0 +1,6 @@
+GET    /playlists              목록
+POST   /playlists              새로 만들기        (본문: 이름)
+GET    /playlists/1            하나 보기
+PATCH  /playlists/1            이름 바꾸기        (본문: 새 이름)
+DELETE /playlists/1            삭제
+POST   /playlists/1/songs      곡 추가            (본문: 곡 정보)

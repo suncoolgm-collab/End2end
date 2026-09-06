@@ -8,3 +8,5 @@ while True:
     data= conn.recv(1024)        
     print(data.decode())
     conn.close()
+    
+    
