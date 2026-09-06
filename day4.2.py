@@ -39,7 +39,8 @@ while True:
         
     method, path, ver= line_0.split(b" ", 2)
 
- 
+    respd_status="200 OK"
+    
     if method == b"GET":
         respd_body= method
     elif method == b"POST":
@@ -47,9 +48,10 @@ while True:
     elif method == b"DELETE":
         respd_body= method+path
     else:
+        respd_status="405 Method Not Allowed"
         respd_body = b"unsupported"
     respd=(
-        b"HTTP/1.1 200 OK\r\n"
+        b"HTTP/1.1 " +str(respd_status).encode() +b"\r\n"
         b"Content-Type: text/plain; charset=utf-8\r\n"
         b"Content-Length: "+str(len(respd_body)).encode()+b"\r\n"
         b"Connection: close\r\n\r\n"
